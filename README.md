@@ -44,13 +44,25 @@ For example, to autorun the commands on every `.coffee` and `.rb` script in the 
 
 ### Refresh Chrome when an HTML file is updated
 
-On Mac:
+On Mac, add the following to the top of your HTML files:
 
+    <!---
     autorun: osascript -e 'tell application "Google Chrome" to tell the active tab of its first window to reload'
+    -->
+
+Then watch them with:
+
+    autorunner *.html
 
 ### Automatically Run a Ruby script
 
-    autorun: ruby $FILEPATH
+Add the following to your Ruby files:
+
+    # autorun: ruby $FILEPATH
+
+Then watch them with:
+
+    autorunner *.rb
 
 ## Contributing
 
