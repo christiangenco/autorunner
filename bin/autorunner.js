@@ -2,9 +2,9 @@
 
 // https://github.com/paulmillr/chokidar
 var chokidar = require('chokidar');
-var path = require('path');
-var exec = require('child_process').exec;
-var fs = require('fs');
+var path     = require('path');
+var exec     = require('child_process').exec;
+var fs       = require('fs');
 
 if (process.argv.length < 3) {
   console.log('Usage: autorun FILENAME');
@@ -48,22 +48,3 @@ for(var i=2; i<process.argv.length; i++){
   console.log("> watching", filepath);
   watcher.add(filepath);
 }
-
-// // One-liner for current directory, ignores .dotfiles
-// chokidar.watch(path.resolve(process.argv[2]), {ignored: /[\/\\]\./}).on('all', function(event, path) {
-//   // console.log(event, path);
-//   // console.log("something changed");
-//   console.log(path);
-
-//   fs.readFile(path, function (err, data) {
-//     if (err) throw err;
-//     console.log(data.toString());
-//   });
-//   // if(path.match(/\.rb$/)){
-//   //   exec('ruby ' + path, function (error, stdout, stderr) {
-//   //     // output is in stdout
-//   //     console.log("$ ruby =>", error, stdout, stderr);
-//   //   });
-//   // }
-// });
-
