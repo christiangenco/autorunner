@@ -1,6 +1,6 @@
 # autorunner
 
-Autorunner is a command line utility that automatically re-runs a command when a file is saved.
+Autorunner is a command line utility that automatically runs a command when a file is saved.
 
 ## Installation
 
@@ -76,7 +76,7 @@ Then watch them with:
 
     $ autorunner *.md
 
-### automatically scp your python scripts when saving
+### Automatically scp your python scripts when saving
 
 Add this to your python script:
 
