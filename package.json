@@ -28,5 +28,5 @@
     "chokidar": "~1.0.0"
   },
   "preferGlobal": true,
-  "bin": "autorunner.js"
+  "bin": "bin/autorunner.js"
 }
