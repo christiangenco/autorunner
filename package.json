@@ -23,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/christiangenco/autorunner/issues"
   },
-  "homepage": "https://github.com/christiangenco/autorunner#readme"
+  "homepage": "https://github.com/christiangenco/autorunner#readme",
+  "dependencies": {
+    "chokidar": "~1.0.0"
+  },
+  "preferGlobal": true,
+  "bin": "autorunner.js"
 }
