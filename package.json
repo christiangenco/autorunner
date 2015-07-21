@@ -1,0 +1,27 @@
+{
+  "name": "autorunner",
+  "version": "1.0.0",
+  "description": "Automatically run a command when a file is updated.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christiangenco/autorunner.git"
+  },
+  "keywords": [
+    "autorun",
+    "chokidar",
+    "run",
+    "script",
+    "watchr",
+    "watcher"
+  ],
+  "author": "Christian Genco",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/christiangenco/autorunner/issues"
+  },
+  "homepage": "https://github.com/christiangenco/autorunner#readme"
+}
