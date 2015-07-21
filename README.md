@@ -16,7 +16,7 @@ For example, say we have a file `app.coffee`, and every time the file is saved i
 
 Just add the following line to the top of `app.coffee`:
 
-    autorun: coffee -c app.coffee
+    # autorun: coffee -c app.coffee
 
 and watch `app.coffee` with `autorunner`:
 
@@ -28,7 +28,7 @@ Note that this example could also be accomplished with `coffee -wc app.coffee` -
 
 We can generalize the `autorun` script by automatically inserting the filename:
 
-    autorun: coffee -c $FILEPATH
+    # autorun: coffee -c $FILEPATH
 
 Here, `$FILEPATH` will be replaced with the full path to `app.coffee` before the command is run.
 
@@ -52,7 +52,7 @@ On Mac, add the following to the top of your HTML files:
 
 Then watch them with:
 
-    autorunner *.html
+    $ autorunner *.html
 
 ### Automatically Run a Ruby script
 
@@ -62,7 +62,29 @@ Add the following to your Ruby files:
 
 Then watch them with:
 
-    autorunner *.rb
+    $ autorunner *.rb
+
+### Have your computer announce the number of words in your .md file
+
+On Mac, add this to your markdown files:
+
+    <!---
+    autorun: say `wc -w < $FILEPATH` words
+    -->
+
+Then watch them with:
+
+    $ autorunner *.md
+
+### automatically scp your python scripts when saving
+
+Add this to your python script:
+
+    # autorun: scp $FILEPATH your_username@remotehost.edu:/some/remote/directory
+
+Then watch them with:
+
+    $ autorunner *.py
 
 ## Contributing
 
